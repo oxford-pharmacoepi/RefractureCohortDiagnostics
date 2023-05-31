@@ -19703,7 +19703,7 @@
   },
   "InclusionRules": [
     {
-      "name": "History of prior fracture",
+      "name": "Exclusion Criteria - no prior history of fracture",
       "expression": {
         "Type": "ALL",
         "CriteriaList": [
@@ -19719,14 +19719,15 @@
                 "Coeff": -1
               },
               "End": {
-                "Days": 90,
+                "Days": 1,
                 "Coeff": -1
               },
               "UseEventEnd": false
             },
             "Occurrence": {
-              "Type": 2,
-              "Count": 1
+              "Type": 0,
+              "Count": 0,
+              "CountColumn": "DOMAIN_CONCEPT"
             }
           }
         ],
@@ -19765,7 +19766,7 @@
       }
     },
     {
-      "name": "Exclusion Criteria - no records of metabolic bone disease before",
+      "name": "Exclusion Criteria - no records of matabolic bone before",
       "expression": {
         "Type": "ALL",
         "CriteriaList": [
@@ -19796,7 +19797,7 @@
       }
     },
     {
-      "name": "Exclusion Crieria - no records of neoplastic diseases before",
+      "name": "Exclusion Criteria - no records of neoplastic diseases",
       "expression": {
         "Type": "ALL",
         "CriteriaList": [
@@ -19836,13 +19837,11 @@
   "CensoringCriteria": [
     {
       "ConditionOccurrence": {
-        "CodesetId": 0
+        "CodesetId": 2
       }
     },
     {
-      "ConditionOccurrence": {
-        "CodesetId": 2
-      }
+      "Death": {}
     },
     {
       "ConditionOccurrence": {
@@ -19850,7 +19849,9 @@
       }
     },
     {
-      "Death": {}
+      "ConditionOccurrence": {
+        "CodesetId": 0
+      }
     }
   ],
   "CollapseSettings": {
