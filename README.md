@@ -1,7 +1,7 @@
 CohortDiagnostics for UCB Refracture Study
 ========================================================================================================================================================
 ## Introduction
-This repository contains the code for implementing cohort diagnostics for UCB Refracture Study led by the University of Oxford
+This repository contains the code for implementing cohort diagnostics for UCB Refracture Study led by the University of Oxford.
 
 ## To Run
 1) Download this entire repository (you can download as a zip folder using Code -> Download ZIP, or you can use GitHub Desktop). 
