@@ -37,7 +37,7 @@ connectionDetails <- createConnectionDetails(dbms = "...",
 targetDialect <-"..." 
 # schema that contains the OMOP CDM with patient-level data
 cdm_database_schema<-"..."
-# schema that contains the vocabularie
+# schema that contains the vocabulary
 vocabulary_database_schema<-"..."
 # schema where a results table will be created 
 results_database_schema<-"..."
